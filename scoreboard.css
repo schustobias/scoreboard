@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI Variable",
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #0f0;
+  display: flex;
+  /*justify-content: safe center;
+        align-items: center;*/
+}
+
+.overlay-text {
+  /*#Id, .Klassen Leer=>Html-Tag Leer=>Innerhalb des Oberen*/
+  position: absolute;
+  font-weight: bold;
+  font-size: 6rem;
+  -webkit-text-stroke: 3px #000;
+  color: #fff;
+  top: 7rem;
+  z-index: -1;
+}
+
+.label {
+  position: absolute;
+  font-weight: bold;
+  font-size: 4rem;
+  -webkit-text-stroke: 3px #000;
+  color: #fff;
+  top: 3rem;
+  z-index: -1;
+}
+
+#labelTeam1 {
+  left: 3rem;
+}
+
+#labelTeam2 {
+  right: 3rem;
+}
+
+#labelTimer {
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#team1 {
+  left: 3rem;
+}
+
+#team2 {
+  right: 3rem;
+}
+
+#timer {
+  top: 3rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.checkbox {
+  width: 5rem;
+  height: 5rem;
+}

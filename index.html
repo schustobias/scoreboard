@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Settings</h1>
+    <div class="checkbox-row">
+      <input type="checkbox" id="show-global" />
+      <label for="show-global">Show everything</label>
+    </div>
+    <button id="show-scoreboard">Popup</button>
+    <h2>Scoreboard</h2>
+    <div class="checkbox-row">
+      <input type="checkbox" id="show-score" />
+      <label for="show-score">Show scoreboard</label>
+    </div>
+    <table>
+      <tr>
+        <td><input type="checkbox" id="show-team1" /></td>
+        <td><input type="text" id="name-team1" /></td>
+        <td><button id="reset-score-team1">🗑️</button></td>
+        <td><input type="text" id="score-team1" /></td>
+        <td><button id="add-team1">+</button></td>
+        <td><button id="sub-team1">-</button></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" id="show-team2" /></td>
+        <td><input type="text" id="name-team2" /></td>
+        <td><button id="reset-score-team2">🗑️</button></td>
+        <td><input type="text" id="score-team2" /></td>
+        <td><button id="add-team2">+</button></td>
+        <td><button id="sub-team2">-</button></td>
+      </tr>
+    </table>
+    <h2>Timer</h2>
+    <div class="checkbox-row">
+      <input type="checkbox" id="show-timer" />
+      <label for="show-timer">Show timer</label>
+    </div>
+    <div class="timer-input">
+      <input type="number" id="timer-value-minutes" />
+      :
+      <input type="number" id="timer-value-seconds" />
+    </div>
+    <button id="toggle-timer"></button>
+    <button id="reset-timer">reset</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>

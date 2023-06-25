@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="open">Open window</button>
+    <button id="aaaa">Click me</button>
+    <script>
+      document.getElementById("open").addEventListener("click", handleOpen);
+      document.getElementById("aaaa").addEventListener("click", handleClick);
+
+      let windowHandle;
+
+      function handleOpen() {
+        windowHandle = window.open("child.html", "_blank", "popup=true");
+      }
+
+      function handleClick() {
+        windowHandle.document.getElementById("child").innerText = "fdskjlhsdfh";
+      }
+    </script>
+  </body>
+</html>
