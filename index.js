@@ -175,14 +175,12 @@ function applyTimerSettings() {
     settings.timer.timeoutHandle !== null;
 }
 function startTimer() {
-  console.time("label");
   const now = new Date();
   settings.timer.startMillis = now.getMilliseconds();
   timerCallback(false);
 }
 
 function stopTimer() {
-  console.timeEnd("label");
   if (settings.timer.timeoutHandle) {
     try {
       clearTimeout(settings.timer.timeoutHandle);

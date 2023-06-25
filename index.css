@@ -5,3 +5,41 @@ html {
     sans-serif;
   color-scheme: dark light;
 }
+
+input[type="checkbox"] {
+  padding: 0.25rem;
+}
+input[type="number"],
+input[type="text"] {
+  padding: 0 0.5rem;
+}
+
+input[type="number"] {
+  margin-bottom: 1rem;
+  height: 2rem;
+}
+input[type="checkbox"] {
+  width: 1.1rem;
+  aspect-ratio: 1;
+}
+table * {
+  height: 2rem;
+  margin-right: 0.4rem;
+}
+
+table button {
+  padding: 0;
+  width: 2rem;
+}
+.checkbox-row {
+  margin-bottom: 1rem;
+}
+button {
+  height: 2rem;
+  margin-right: 0.5rem;
+  padding: 0 1rem;
+}
+.timer-input span {
+  font-size: 1.5rem;
+  margin: 0 0.25rem;
+}

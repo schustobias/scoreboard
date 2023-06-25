@@ -22,7 +22,9 @@
       <tr>
         <td><input type="checkbox" id="show-team1" /></td>
         <td><input type="text" id="name-team1" /></td>
-        <td><button id="reset-score-team1">🗑️</button></td>
+        <td>
+          <button id="reset-score-team1">🗑️</button>
+        </td>
         <td><input type="text" id="score-team1" /></td>
         <td><button id="add-team1">+</button></td>
         <td><button id="sub-team1">-</button></td>
@@ -30,7 +32,9 @@
       <tr>
         <td><input type="checkbox" id="show-team2" /></td>
         <td><input type="text" id="name-team2" /></td>
-        <td><button id="reset-score-team2">🗑️</button></td>
+        <td>
+          <button class="single-sign-button" id="reset-score-team2">🗑️</button>
+        </td>
         <td><input type="text" id="score-team2" /></td>
         <td><button id="add-team2">+</button></td>
         <td><button id="sub-team2">-</button></td>
@@ -43,7 +47,7 @@
     </div>
     <div class="timer-input">
       <input type="number" id="timer-value-minutes" />
-      :
+      <span>:</span>
       <input type="number" id="timer-value-seconds" />
     </div>
     <button id="toggle-timer"></button>
